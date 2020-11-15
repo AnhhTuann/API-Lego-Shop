@@ -1,7 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const StaffController = require("../controller/StaffController");
+const StaffController = require("../controllers/StaffController");
+
+router.get("/testdata", StaffController.testdata);
+
 router.get("/test", StaffController.test);
 
 router.get("/save", (req, res) => {
