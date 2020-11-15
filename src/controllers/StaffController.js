@@ -9,15 +9,16 @@ controllers.testdata = async (req, res) => {
   const response = await sequelize
     .sync()
     .then(function () {
+      /*
       Role.create({
         role: "Aasdasd",
       });
-
+      */
       Staff.create({
-        name: "Tuan",
-        email: "sdasd",
-        addresss: "asdasd",
-        phone: "sdasdas",
+        name: "Vu",
+        email: "asd",
+        address: "asdasd",
+        phone: "112332",
         roleId: 1,
       });
 

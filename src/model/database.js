@@ -1,7 +1,7 @@
 var Sequelize = require("sequelize");
 
 const sequelize = new Sequelize(
-  "lego_shop", //database
+  "lego", //database
   "root", //user
   "password",
   {
