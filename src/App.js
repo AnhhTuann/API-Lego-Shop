@@ -1,6 +1,9 @@
 //TODO import express
 const express = require("express");
 const app = express();
+const cors = require("cors");
+
+app.use(cors());
 
 //TODO setting port
 app.set("port", process.env.PORT || 3000);
